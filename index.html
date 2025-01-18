@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>kisaanya - Organic Food Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon_kisaanya.jpeg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Add this in the <head> section -->
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+    /* Add offset for fixed header */
+    section {
+        scroll-margin-top: 80px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt me-2"></i>Bangalore, India</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>farmers@kisaanya.com</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <a class="text-body ms-3" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="text-body ms-3" href=""><i class="fab fa-twitter"></i></a>
+                <a class="text-body ms-3" href="https://www.linkedin.com/in/kisaanya-fresh-108849347/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-body ms-3" href="https://www.linkedin.com/in/kisaanya-fresh-108849347/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">k<span class="text-secondary">is</span>aanya</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#products" class="nav-item nav-link">Products</a>
+                    <a href="#about" class="nav-item nav-link">About Us</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
+                        <small class="fa fa-shopping-bag text-body"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <section id="home">
+        <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/carousel-1.png" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-start">
+                                    <div class="col-lg-7">
+                                        <h1 class="display-2 mb-5 animated slideInDown">Farm to Fork: Freshness You Can Taste!</h1>
+                                        <a href="#products" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">Products</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/carousel-2.png" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-start">
+                                    <div class="col-lg-7">
+                                        <h1 class="display-2 mb-5 animated slideInDown">Field to Feast: Savor the Freshness!</h1>
+                                        <a href="#products" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">Products</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <section id="about">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/about.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="display-5 mb-4">About Kisaanya</h1>
+                        <p class="mb-4">At Kisaanya, we bridge the gap between farmers and consumers, delivering farm-fresh, organic produce right to your doorstep. Our mission is to empower local farmers while promoting healthy, sustainable living for you and your family.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Eco-friendly packaging</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>100% Chemical-free produce</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Direct farmer partnerships</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <section id="features">
+    <div class="container-fluid bg-light bg-icon my-5 py-6">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                <h1 class="display-5 mb-3">Experience the Best of Nature: Sustainable, Organic, and Fresh.</h1>
+                <p>Our platform brings you the finest produce directly from local farms, cultivated with care and dedication to ensure superior quality.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
+                        <h4 class="mb-3">Natural Process</h4>
+                        <p class="mb-4">From Farm to Plate: A Journey of Purity. We follow traditional and sustainable farming methods that preserve the natural goodness of every product, free from harmful chemicals and artificial additives.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                        <h4 class="mb-3">Organic Products</h4>
+                        <p class="mb-4">Certified Organic, Packed with Nutrients. Our range includes a wide variety of organically grown fruits, vegetables, and pulses, ensuring every bite is healthy and environmentally friendly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
+                        <h4 class="mb-3">Biologically Safe</h4>
+                        <p class="mb-4">Safety You Can Trust, Freshness You Can Taste. All our products undergo stringent quality checks, making them biologically safe and ideal for you and your family</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Feature End -->
+
+
+    <!-- Product Start -->
+    <section id="products">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 gx-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="section-header text-start mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-5 mb-3">Our Products</h1>
+                        <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+    <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+        <li class="nav-item me-2">
+            <a class="btn btn-outline-primary border-2 active" data-bs-toggle="pill" href="#tab-1">Pulses</a>
+        </li>
+        <li class="nav-item me-2">
+            <a class="btn btn-outline-primary border-2" data-bs-toggle="pill" href="#tab-2">Vegetables</a>
+        </li>
+        <li class="nav-item me-0">
+            <a class="btn btn-outline-primary border-2" data-bs-toggle="pill" href="#tab-3">Fruits</a>
+        </li>
+    </ul>
+</div>
+            </div>
+            <div class="tab-content">
+                <!-- Pulses -->
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/products/Bhat_ki_Dal.png" alt="Bhat ki Dal" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bhat ki Dal">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bhat ki Dal">Bhat ki Dal</a>
+                                    <span class="text-primary me-1">₹345</span>
+                                    <span class="text-body text-decoration-line-through">₹395</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bhat ki Dal"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/products/Urad_Pahadi.png" alt="Urad Pahadi" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Urad Pahadi">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Urad Pahadi">Urad Pahadi</a>
+                                    <span class="text-primary me-1">₹135</span>
+                                    <span class="text-body text-decoration-line-through">₹150</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Urad Pahadi"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/products/Kala_Chana.png" alt="Kala Chana" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Kala Chana">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Kala Chana">Kala Chana</a>
+                                    <span class="text-primary me-1">₹80</span>
+                                    <span class="text-body text-decoration-line-through">₹90</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Kala Chana"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/products/Pahadi_Rajma.png" alt="Pahadi Rajma" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Rajma">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Rajma">Pahadi Rajma</a>
+                                    <span class="text-primary me-1">₹160</span>
+                                    <span class="text-body text-decoration-line-through">₹180</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Rajma"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/products/Urad Dal.png" alt="Urad Dal" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Urad Dal">
+                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                </div>
+                                <div class="text-center p-4">
+                                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Urad Dal">Urad Dal</a>
+                                    <span class="text-primary me-1">₹125</span>
+                                    <span class="text-body text-decoration-line-through">₹140</span>
+                                </div>
+                                <div class="d-flex border-top">
+                                    <small class="w-50 text-center border-end py-2">
+                                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Urad Dal"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                                    </small>
+                                    <small class="w-50 text-center py-2">
+                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        </div>
+                    </div>
+                </div>
+                <!-- Vegetables -->
+                <div id="tab-2" class="tab-pane fade show p-0">
+    <div class="row g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Cauliflower.png" alt="Cauliflower" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Cauliflower">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Cauliflower">Cauliflower</a>
+                    <span class="text-primary me-1">₹35</span>
+                    <span class="text-body text-decoration-line-through">₹40</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Cauliflower"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Pahadi_Onions.png" alt="Pahadi Onions" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Onions">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Onions">Pahadi Onions</a>
+                    <span class="text-primary me-1">₹30</span>
+                    <span class="text-body text-decoration-line-through">₹35</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Onions"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Pahadi_Potatoes.png" alt="Pahadi Potatoes" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Potatoes">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Potatoes">Pahadi Potatoes</a>
+                    <span class="text-primary me-1">₹25</span>
+                    <span class="text-body text-decoration-line-through">₹30</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Potatoes"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Orange_Carrots.png" alt="Orange Carrots" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Orange Carrots">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Orange Carrots">Orange Carrots</a>
+                    <span class="text-primary me-1">₹40</span>
+                    <span class="text-body text-decoration-line-through">₹45</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Orange Carrots"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Round_Radish.png" alt="Round Radish" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Round Radish">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Round Radish">Round Radish</a>
+                    <span class="text-primary me-1">₹20</span>
+                    <span class="text-body text-decoration-line-through">₹25</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Round Radish"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Sweet_Peas.png" alt="Sweet Peas" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Sweet Peas">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Sweet Peas">Sweet Peas</a>
+                    <span class="text-primary me-1">₹50</span>
+                    <span class="text-body text-decoration-line-through">₹60</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Sweet Peas"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Gaderi.png" alt="Gaderi" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Gaderi">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Gaderi">Gaderi</a>
+                    <span class="text-primary me-1">₹45</span>
+                    <span class="text-body text-decoration-line-through">₹50</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Gaderi"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Gethi.png" alt="Gethi" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Gethi">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Gethi">Gethi</a>
+                    <span class="text-primary me-1">₹40</span>
+                    <span class="text-body text-decoration-line-through">₹45</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Gethi"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- Fruits -->
+                <div id="tab-3" class="tab-pane fade show p-0">
+    <div class="row g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Amla.png" alt="Amla" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Amla">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Amla">Amla</a>
+                    <span class="text-primary me-1">₹100</span>
+                    <span class="text-body text-decoration-line-through">₹120</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Amla"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Bada_Nimbu.png" alt="Bada Nimbu" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bada Nimbu">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bada Nimbu">Bada Nimbu</a>
+                    <span class="text-primary me-1">₹50</span>
+                    <span class="text-body text-decoration-line-through">₹60</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bada Nimbu"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Malta_Oranges.png" alt="Malta Oranges" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Malta Oranges">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Malta Oranges">Malta Oranges</a>
+                    <span class="text-primary me-1">₹70</span>
+                    <span class="text-body text-decoration-line-through">₹80</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Malta Oranges"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="product-item">
+                <div class="position-relative bg-light overflow-hidden">
+                    <img class="img-fluid w-100" src="img/products/Mango_for_Summer.png" alt="Mango for Summer" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Mango for Summer">
+                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                </div>
+                <div class="text-center p-4">
+                    <a class="d-block h5 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Mango for Summer">Mango for Summer</a>
+                    <span class="text-primary me-1">₹130</span>
+                    <span class="text-body text-decoration-line-through">₹150</span>
+                </div>
+                <div class="d-flex border-top">
+                    <small class="w-50 text-center border-end py-2">
+                        <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Mango for Summer"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
+                    </small>
+                    <small class="w-50 text-center py-2">
+                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Product End -->
+
+    <!-- Product Modal Start -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img id="productImage" class="img-fluid" src="" alt="Product Image">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 id="productName"></h3>
+                        <p id="productDescription"></p>
+                        <ul id="productBenefits"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product Modal End -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <h1 class="display-5 mb-3">Contact Us</h1>
+                    <p>Get in touch with us for any queries or support.</p>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div class="col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="bg-primary text-white d-flex flex-column justify-content-center h-100 p-5">
+                            <h5 class="text-white">Call Us</h5>
+                            <p class="mb-5"><i class="fa fa-phone-alt me-3"></i>+91 80123 45678</p>
+                            <h5 class="text-white">Email Us</h5>
+                            <p class="mb-5"><i class="fa fa-envelope me-3"></i>farmers@kisaanya.com</p>
+                            <h5 class="text-white">Office Address</h5>
+                            <p class="mb-5"><i class="fa fa-map-marker-alt me-3"></i>Bangalore, India</p>
+                            <h5 class="text-white">Follow Us</h5>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-0" href="https://www.linkedin.com/in/kisaanya-fresh-108849347/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5 justify-content-center text-center">
+            <div class="col-lg-4 col-md-6">
+                <h1 class="fw-bold text-primary mb-4">k<span class="text-secondary">is</span>aanya</h1>
+                <div class="d-flex justify-content-center pt-2">
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-light rounded-circle me-0" href="https://www.linkedin.com/in/kisaanya-fresh-108849347/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-light mb-4">Address</h4>
+                <p><i class="fa fa-map-marker-alt me-3"></i>Bangalore, India</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+91 80123 45678</p>
+                <p><i class="fa fa-envelope me-3"></i>farmers@kisaanya.com</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-light mb-4">Newsletter</h4>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright">
+        <div class="container text-center">
+            &copy; <a href="#">kisaanya.com</a>, All Right Reserved.
+        </div>
+    </div>
+</div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Add this before closing </body> tag -->
+    <script>
+    // Add active class to navbar items based on scroll position
+    document.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 90) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+            }
+        });
+    });
+
+    const productDetails = {
+    "Bhat ki Dal": {
+        image: "img/products/Bhat_ki_Dal.png",
+        name: "Bhat ki Dal (भट की दाल)",
+        description: "Also Known As: Black Soybean",
+        benefits: [
+            "Health Benefits: High protein content, aids in muscle growth, boosts energy.",
+            "Medical Benefits: Good for heart health, helps in managing diabetes, and supports bone strength."
+        ]
+    },
+    "Urad Pahadi": {
+        image: "img/products/Urad_Pahadi.png",
+        name: "Urad Pahadi (उड़द पहाड़ी)",
+        description: "Also Known As: Pahadi Black Lentils",
+        benefits: [
+            "Health Benefits: High in protein and dietary fiber, promotes digestion.",
+            "Medical Benefits: Good for skin health, helps in managing cholesterol, and boosts immunity."
+        ]
+    },
+    "Kala Chana": {
+        image: "img/products/Kala_Chana.png",
+        name: "Kala Chana (काला चना)",
+        description: "Also Known As: Black Chickpeas",
+        benefits: [
+            "Health Benefits: Rich in protein and iron, supports weight loss.",
+            "Medical Benefits: Boosts immunity, good for controlling blood sugar levels, and improves gut health."
+        ]
+    },
+    "Pahadi Rajma": {
+        image: "img/products/Pahadi_Rajma.png",
+        name: "Pahadi Rajma (पहाड़ी राजमा)",
+        description: "Also Known As: Hill Kidney Beans",
+        benefits: [
+            "Health Benefits: High in protein and fiber, supports digestion.",
+            "Medical Benefits: Reduces cholesterol, supports heart health, and helps in weight management."
+        ]
+    },
+    "Urad Dal": {
+        image: "img/products/Urad Dal.png",
+        name: "Urad Dal (उड़द दाल)",
+        description: "Also Known As: Split Black Gram",
+        benefits: [
+            "Health Benefits: Improves bone density, enhances skin texture.",
+            "Medical Benefits: Supports liver function and aids in digestion."
+        ]
+    },
+    "Amla": {
+        image: "img/products/Amla.png",
+        name: "Amla (आंवला)",
+        description: "Also Known As: Indian Gooseberry",
+        benefits: [
+            "Health Benefits: High in vitamin C, boosts immunity.",
+            "Medical Benefits: Good for digestion, improves skin and hair health, supports liver function."
+        ]
+    },
+    "Bada Nimbu": {
+        image: "img/products/Bada_Nimbu.png",
+        name: "Bada Nimbu (बड़ा नींबू)",
+        description: "Also Known As: Hill Lemon",
+        benefits: [
+            "Health Benefits: Rich in vitamin C, detoxifies the body.",
+            "Medical Benefits: Improves skin health, supports digestion."
+        ]
+    },
+    "Malta Oranges": {
+        image: "img/products/Malta_Oranges.png",
+        name: "Malta Oranges (माल्टा संतरे)",
+        description: "Also Known As: Sweet Oranges",
+        benefits: [
+            "Health Benefits: High in antioxidants and vitamin C, boosts immunity.",
+            "Medical Benefits: Good for skin health, helps in managing blood pressure."
+        ]
+    },
+    "Mango for Summer": {
+        image: "img/products/Mango_for_Summer.png",
+        name: "Mango for Summer (गर्मी का आम)",
+        description: "Also Known As: King of Fruits",
+        benefits: [
+            "Health Benefits: Rich in vitamin A, good for skin and eyesight.",
+            "Medical Benefits: Boosts immunity, helps in maintaining healthy digestion."
+        ]
+    },
+    "Dal": {
+        image: "img/products/Dal.png",
+        name: "Dal (दाल)",
+        description: "Also Known As: Mixed Lentils (Specific Hill Variety)",
+        benefits: [
+            "Health Benefits: High in protein, improves metabolism.",
+            "Medical Benefits: Supports digestion and provides essential nutrients."
+        ]
+    },
+    "Cauliflower": {
+        image: "img/products/Cauliflower.png",
+        name: "Cauliflower (फूलगोभी)",
+        description: "Also Known As: Gobhi",
+        benefits: [
+            "Health Benefits: Rich in vitamins C and K, promotes bone health.",
+            "Medical Benefits: Contains antioxidants that reduce inflammation, supports heart health."
+        ]
+    },
+    "Pahadi Onions": {
+        image: "img/products/Pahadi_Onions.png",
+        name: "Pahadi Onions (पहाड़ी प्याज)",
+        description: "Also Known As: Hill Onions",
+        benefits: [
+            "Health Benefits: Boosts immunity, enhances metabolism.",
+            "Medical Benefits: Improves blood circulation, beneficial for heart health."
+        ]
+    },
+    "Pahadi Potatoes": {
+        image: "img/products/Pahadi_Potatoes.png",
+        name: "Pahadi Potatoes (पहाड़ी आलू)",
+        description: "Also Known As: Hill Potatoes",
+        benefits: [
+            "Health Benefits: Rich in carbohydrates and potassium, provides energy.",
+            "Medical Benefits: Supports nerve function, good for muscle health."
+        ]
+    },
+    "Orange Carrots": {
+        image: "img/products/Orange_Carrots.png",
+        name: "Orange Carrots (संतरी गाजर)",
+        description: "Also Known As: Gajar",
+        benefits: [
+            "Health Benefits: High in beta-carotene, improves vision.",
+            "Medical Benefits: Good for skin health, boosts the immune system."
+        ]
+    },
+    "Round Radish": {
+        image: "img/products/Round_Radish.png",
+        name: "Round Radish (गोल मूली)",
+        description: "Also Known As: Mooli",
+        benefits: [
+            "Health Benefits: Supports digestion, low in calories.",
+            "Medical Benefits: Detoxifies the liver, helps in managing jaundice."
+        ]
+    },
+    "Sweet Peas": {
+        image: "img/products/Sweet_Peas.png",
+        name: "Sweet Peas (मटर)",
+        description: "Also Known As: Matar",
+        benefits: [
+            "Health Benefits: High in protein and fiber, promotes gut health.",
+            "Medical Benefits: Good for heart health and regulates blood sugar levels."
+        ]
+    },
+    "Gaderi": {
+        image: "img/products/Gaderi.png",
+        name: "Gaderi (गढ़ेरी)",
+        description: "Also Known As: Taro Root",
+        benefits: [
+            "Health Benefits: Rich in dietary fiber, good for digestion.",
+            "Medical Benefits: Supports blood sugar control, boosts energy."
+        ]
+    },
+    "Gethi": {
+        image: "img/products/Gethi.png",
+        name: "Gethi (गेठी)",
+        description: "Also Known As: Colocasia",
+        benefits: [
+            "Health Benefits: High in potassium, helps in maintaining electrolyte balance.",
+            "Medical Benefits: Beneficial for cardiovascular health."
+        ]
+    }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const productModal = document.getElementById('productModal');
+    productModal.addEventListener('show.bs.modal', event => {
+        const button = event.relatedTarget;
+        const product = button.getAttribute('data-product');
+        const details = productDetails[product];
+
+        document.getElementById('productImage').src = details.image;
+        document.getElementById('productName').textContent = details.name;
+        document.getElementById('productDescription').textContent = details.description;
+        const benefitsList = document.getElementById('productBenefits');
+        benefitsList.innerHTML = '';
+        details.benefits.forEach(benefit => {
+            const li = document.createElement('li');
+            li.textContent = benefit;
+            benefitsList.appendChild(li);
+        });
+    });
+});
+    </script>
+</body>
+
+</html>
