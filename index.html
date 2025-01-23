@@ -70,10 +70,9 @@
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
-                <a class="text-body ms-3" href=""><i class="fab fa-facebook-f"></i></a>
                 <a class="text-body ms-3" href=""><i class="fab fa-twitter"></i></a>
                 <a class="text-body ms-3" href="https://www.linkedin.com/in/kisaanya-fresh-108849347/"><i class="fab fa-linkedin-in"></i></a>
-                <a class="text-body ms-3" href="https://www.linkedin.com/in/kisaanya-fresh-108849347/"><i class="fab fa-instagram"></i></a>
+                <a class="text-body ms-3" href="https://www.instagram.com/kisaanyafresh/"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
 
@@ -91,10 +90,11 @@
                     <a href="#about" class="nav-item nav-link">About Us</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
+                <!-- Add this in the navbar -->
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
-                        <small class="fa fa-shopping-bag text-body"></small>
-                    </a>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Cart (<span id="cart-count">0</span>)
+                    </button>
                 </div>
             </div>
         </nav>
@@ -256,7 +256,7 @@
                                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bhat ki Dal"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                        <a class="text-body add-to-cart" href="#" data-id="1" data-name="Bhat ki Dal" data-price="345" data-img="img/products/Bhat_ki_Dal.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
                                 </div>
                             </div>
@@ -277,7 +277,7 @@
                                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Urad Pahadi"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                        <a class="text-body add-to-cart" href="#" data-id="2" data-name="Urad Pahadi" data-price="135" data-img="img/products/Urad_Pahadi.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
                                 </div>
                             </div>
@@ -298,7 +298,7 @@
                                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Kala Chana"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                        <a class="text-body add-to-cart" href="#" data-id="3" data-name="Kala Chana" data-price="80" data-img="img/products/Kala_Chana.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
                                 </div>
                             </div>
@@ -319,7 +319,7 @@
                                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Rajma"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                        <a class="text-body add-to-cart" href="#" data-id="4" data-name="Pahadi Rajma" data-price="160" data-img="img/products/Pahadi_Rajma.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
                                 </div>
                             </div>
@@ -340,7 +340,7 @@
                                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Urad Dal"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                                        <a class="text-body add-to-cart" href="#" data-id="5" data-name="Urad Dal" data-price="125" data-img="img/products/Urad Dal.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
                                 </div>
                             </div>
@@ -368,7 +368,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Cauliflower"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="6" data-name="Cauliflower" data-price="35" data-img="img/products/Cauliflower.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -389,7 +389,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Onions"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="7" data-name="Pahadi Onions" data-price="30" data-img="img/products/Pahadi_Onions.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -410,7 +410,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Pahadi Potatoes"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="8" data-name="Pahadi Potatoes" data-price="25" data-img="img/products/Pahadi_Potatoes.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -431,7 +431,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Orange Carrots"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="9" data-name="Orange Carrots" data-price="40" data-img="img/products/Orange_Carrots.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -452,7 +452,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Round Radish"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="10" data-name="Round Radish" data-price="20" data-img="img/products/Round_Radish.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -473,7 +473,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Sweet Peas"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="11" data-name="Sweet Peas" data-price="50" data-img="img/products/Sweet_Peas.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -494,7 +494,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Gaderi"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="12" data-name="Gaderi" data-price="45" data-img="img/products/Gaderi.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -515,7 +515,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Gethi"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="13" data-name="Gethi" data-price="40" data-img="img/products/Gethi.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -541,7 +541,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Amla"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="14" data-name="Amla" data-price="100" data-img="img/products/Amla.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -562,7 +562,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Bada Nimbu"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="15" data-name="Bada Nimbu" data-price="50" data-img="img/products/Bada_Nimbu.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -583,7 +583,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Malta Oranges"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="16" data-name="Malta Oranges" data-price="70" data-img="img/products/Malta_Oranges.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -604,7 +604,7 @@
                         <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#productModal" data-product="Mango for Summer"><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                     </small>
                     <small class="w-50 text-center py-2">
-                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
+                        <a class="text-body add-to-cart" href="#" data-id="17" data-name="Mango for Summer" data-price="130" data-img="img/products/Mango_for_Summer.png"><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                     </small>
                 </div>
             </div>
@@ -642,6 +642,58 @@
 </div>
 <!-- Product Modal End -->
 
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items" class="list-group mb-3"></ul>
+                    <div class="d-flex justify-content-between">
+                        <strong>Total:</strong>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                    <form id="checkout-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="47b041a4-c6e3-48bb-9278-4d37e77781dd">
+                        
+                        <!-- Form Fields -->
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Mobile No." required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="address" name="address" class="form-control" placeholder="Complete Address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="landmark" name="landmark" class="form-control" placeholder="Landmark">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="pincode" name="pincode" class="form-control" placeholder="Pincode" required>
+                        </div>
+                        
+                        <!-- Cart Details -->
+                        <input type="hidden" name="cart_details" id="cart-details">
+                        
+                        <!-- Submit Button -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Checkout</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container-xxl py-6">
@@ -654,7 +706,7 @@
                     <div class="col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="bg-primary text-white d-flex flex-column justify-content-center h-100 p-5">
                             <h5 class="text-white">Call Us</h5>
-                            <p class="mb-5"><i class="fa fa-phone-alt me-3"></i>+91-79758 21795</p>
+                            <p class="mb-5"><i class="fa fa-phone-alt me-3"></i>+91 79758 21795</p>
                             <h5 class="text-white">Email Us</h5>
                             <p class="mb-5"><i class="fa fa-envelope me-3"></i>farmers@kisaanya.com</p>
                             <h5 class="text-white">Office Address</h5>
@@ -669,30 +721,30 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                        <form>
+                        <form id="contact-form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="contact-name" name="contactName" placeholder="Your Name" required>
+                                        <label for="contact-name">Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="contact-email" name="contactEmail" placeholder="Your Email" required>
+                                        <label for="contact-email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" autocomplete="subject">
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
-                                        <label for="message">Message</label>
+                                        <textarea class="form-control" placeholder="Leave a message here" id="contact-message" name="contactMessage" style="height: 200px" required></textarea>
+                                        <label for="contact-message">Message</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -723,7 +775,7 @@
             <div class="col-lg-4 col-md-6">
                 <h4 class="text-light mb-4">Address</h4>
                 <p><i class="fa fa-map-marker-alt me-3"></i>Bangalore, India</p>
-                <p><i class="fa fa-phone-alt me-3"></i>+91-79758 21795</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+91 79758 21795</p>
                 <p><i class="fa fa-envelope me-3"></i>farmers@kisaanya.com</p>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -978,6 +1030,66 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
     </script>
+
+    <!-- Add this inside the body tag -->
+    <button class="cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+        Cart (<span id="cart-count">0</span>)
+    </button>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items" class="list-group mb-3"></ul>
+                    <div class="d-flex justify-content-between">
+                        <strong>Total:</strong>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                    <form id="checkout-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="47b041a4-c6e3-48bb-9278-4d37e77781dd">
+                        
+                        <!-- Form Fields -->
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Mobile No." required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="address" name="address" class="form-control" placeholder="Complete Address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="landmark" name="landmark" class="form-control" placeholder="Landmark">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="pincode" name="pincode" class="form-control" placeholder="Pincode" required>
+                        </div>
+                        
+                        <!-- Cart Details -->
+                        <input type="hidden" name="cart_details" id="cart-details">
+                        
+                        <!-- Submit Button -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Checkout</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this before closing </body> tag -->
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
