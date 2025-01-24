@@ -69,6 +69,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    function validateForm() {
+        let isValid = true;
+        const fields = [
+            { id: 'name', type: 'text', required: true },
+            { id: 'email', type: 'email', required: true },
+            { id: 'phone', type: 'tel', required: true },
+            { id: 'address', type: 'text', required: true },
+            { id: 'pincode', type: 'text', required: true }
+        ];
+
+        fields.forEach(field => {
+            const input = document.getElementById(field.id);
+            input.classList.remove('is-invalid');
+
+            if (field.required && !input.value.trim()) {
+                input.classList.add('is-invalid');
+                isValid = false;
+            } else if (field.type === 'email' && !/\S+@\S+\.\S+/.test(input.value)) {
+                input.classList.add('is-invalid');
+                isValid = false;
+            } else if ((field.type === 'tel' || field.id === 'pincode') && !/^\d+$/.test(input.value)) {
+                input.classList.add('is-invalid');
+                isValid = false;
+            }
+        });
+
+        return isValid;
+    }
+
     function updateCartDisplay() {
         cartItems.innerHTML = '';
 
@@ -174,29 +203,33 @@ document.addEventListener('DOMContentLoaded', () => {
     if (checkoutButton) {
         checkoutButton.addEventListener("click", (e) => {
             e.preventDefault();
-            const form = document.getElementById("checkout-form");
-            const formData = new FormData(form);
+            if (validateForm()) {
+                const form = document.getElementById("checkout-form");
+                const formData = new FormData(form);
 
-            fetch(form.action, {
-                method: form.method,
-                body: formData,
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert("Order submitted successfully!");
-                    cart = [];
-                    sessionStorage.removeItem("cart");
-                    updateCartCount();
-                    cartModal.classList.remove('show');
-                } else {
+                fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("Order submitted successfully!");
+                        cart = [];
+                        sessionStorage.removeItem("cart");
+                        updateCartCount();
+                        cartModal.classList.remove('show');
+                    } else {
+                        alert("There was an error submitting your order. Please try again.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
                     alert("There was an error submitting your order. Please try again.");
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("There was an error submitting your order. Please try again.");
-            });
+                });
+            } else {
+                alert("Please correct the highlighted fields.");
+            }
         });
     }
 
